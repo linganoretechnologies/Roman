@@ -7,3 +7,4 @@ design-partners/*
 !design-partners/.gitkeep
 .DS_Store
 *.log
+.vercel
