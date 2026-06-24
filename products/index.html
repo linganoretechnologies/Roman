@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products · The Leo suite — Linganore Technologies</title>
+  <meta name="description" content="The Leo suite: focused, AI-native SaaS products built on public frameworks — Leo for Deathcare (FTC Funeral Rule), SOC Delta (SOC 2 review), and the Leo platform.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://roman.linganoretechnologies.com/products/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Linganore Technologies">
+  <meta property="og:title" content="Products · The Leo suite">
+  <meta property="og:description" content="Focused, AI-native SaaS products built on public frameworks.">
+  <meta property="og:url" content="https://roman.linganoretechnologies.com/products/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="/"><span class="mono">L</span>Linganore Technologies</a>
+    <div class="nav-links">
+      <a href="/products/" class="active">Products</a>
+      <a href="/build-log/">Build Log</a>
+      <a href="/studio/">Studio</a>
+      <a href="/capabilities/">Capabilities</a>
+      <a href="/about/">About</a>
+    </div>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-cta" href="/contact/">Get in touch</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="i-sun" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      </button>
+      <button class="menu-btn" data-menu-toggle aria-expanded="false" aria-label="Menu">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/products/">Products</a>
+    <a href="/build-log/">Build Log</a>
+    <a href="/studio/">Studio</a>
+    <a href="/capabilities/">Capabilities</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Get in touch</a>
+  </div>
+</nav>
+
+<main>
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow reveal">The Leo suite</div>
+      <h1 class="display reveal" style="font-size:clamp(30px,4.4vw,48px)">Products, organized by the problem they solve.</h1>
+      <p class="lead reveal">Each product starts the same way: a real, painful workflow that still runs on spreadsheets, email, and copy-paste — and a small, AI-assisted build that replaces it with something fast, auditable, and pleasant to use. Several share one engine: structured document understanding, AI agents that do real work, and clean audit trails.</p>
+    </div>
+  </header>
+
+  <!-- STATUS LEGEND -->
+  <section class="container section-tight">
+    <div class="block reveal">
+      <div class="eyebrow" style="margin-bottom:14px">Status — labeled honestly</div>
+      <div class="grid-2" style="gap:12px 28px">
+        <div><span class="badge pilot">Pilot</span> <span class="muted" style="font-size:13.5px">In the hands of early real users.</span></div>
+        <div><span class="badge building">Building</span> <span class="muted" style="font-size:13.5px">Active development; not yet open to outside users.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY-SPECIFIC -->
+  <section class="container section">
+    <div class="sec-head reveal"><div><div class="eyebrow">Problem space · Industry-specific</div><h2>Deep, narrow, regulation-shaped</h2></div></div>
+    <article id="leo-deathcare" class="block reveal" style="scroll-margin-top:84px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h3 style="font-size:24px;margin:0">Leo for Deathcare</h3>
+        <span class="badge pilot">Pilot</span>
+      </div>
+      <p style="font-size:16px;color:var(--text);margin-bottom:16px"><strong>A compliance workspace that checks a funeral home's price lists against the FTC Funeral Rule before a regulator does.</strong></p>
+      <div class="grid-2" style="gap:24px">
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px">The problem</div>
+          <p class="muted" style="font-size:14.5px">Independent funeral homes must comply with the FTC Funeral Rule — mandatory disclosures and itemized price lists (GPL, CPL, OBCPL). Most do it by hand, with no software and real penalty exposure.</p>
+        </div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px">What it does</div>
+          <p class="muted" style="font-size:14.5px">Audits pricing documents with in-browser PDF parsing, runs mandatory-disclosure and pricing-math checks, applies state-specific checklist profiles, and exports corrected templates.</p>
+        </div>
+      </div>
+      <p class="muted" style="font-size:13.5px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border)">Built on the <strong style="color:var(--text);font-weight:500">FTC Funeral Rule</strong>, a published federal regulation, plus publicly available state requirements. Public law, made operational for small operators. &nbsp;·&nbsp; <span class="stack" style="font-family:var(--font-mono);font-size:12px">Next.js · Clerk · Neon · Stripe</span></p>
+    </article>
+  </section>
+
+  <!-- DOCUMENT & EVIDENCE -->
+  <section class="container section divider">
+    <div class="sec-head reveal"><div><div class="eyebrow">Problem space · Document &amp; evidence automation</div><h2>Turn public frameworks into software</h2></div></div>
+    <p class="lead read reveal" style="margin-bottom:28px">A lot of compliance work is just <em>reading documents and checking them against a known standard</em> — exactly what AI is now good at, and exactly what's still done by hand today.</p>
+
+    <article id="soc-delta" class="block reveal" style="scroll-margin-top:84px;margin-bottom:16px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h3 style="font-size:24px;margin:0">SOC Delta</h3>
+        <span class="badge building">Building</span>
+      </div>
+      <p style="font-size:16px;color:var(--text);margin-bottom:16px"><strong>Upload a vendor's SOC 2 report and get a structured review — plus exactly what changed since last year.</strong></p>
+      <div class="grid-2" style="gap:24px">
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px">The problem</div>
+          <p class="muted" style="font-size:14.5px">SOC 2 reports are long, dense PDFs that get read by hand once a year and then forgotten. Comparing this year's to last year's is tedious and easy to get wrong.</p>
+        </div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px">What it does</div>
+          <p class="muted" style="font-size:14.5px">Page-aware AI extraction with citation validation surfaces scope and exceptions, then runs year-over-year delta analysis so changes between two reports are obvious at a glance.</p>
+        </div>
+      </div>
+      <p class="muted" style="font-size:13.5px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border)">Built around the public <strong style="color:var(--text);font-weight:500">AICPA SOC 2 / Trust Services Criteria</strong> structure that every SOC 2 report follows by definition — it encodes the public standard, not anyone's internal checklist. &nbsp;·&nbsp; <span class="stack" style="font-family:var(--font-mono);font-size:12px">Next.js · Clerk · Neon · Drizzle · Claude API</span></p>
+    </article>
+
+    <article id="leo" class="block reveal" style="scroll-margin-top:84px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h3 style="font-size:24px;margin:0">Leo</h3>
+        <span class="badge building">Building</span>
+      </div>
+      <p style="font-size:16px;color:var(--text);margin-bottom:16px"><strong>The platform behind the suite — AI-native compliance automation built on public frameworks.</strong></p>
+      <div class="grid-2" style="gap:24px">
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px">The idea</div>
+          <p class="muted" style="font-size:14.5px">The shared engine that powers the editions: structured document understanding, AI agents that do real work, and clean, citable audit trails — generalized so a new vertical is cheaper to build than the last.</p>
+        </div>
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px">How it's grounded</div>
+          <p class="muted" style="font-size:14.5px">Encodes how published, industry-standard frameworks — SOC 2, ISO 27001, and NIST — say this work should be done, the same standards documented openly by AICPA, ISO, and NIST.</p>
+        </div>
+      </div>
+      <p class="muted" style="font-size:13.5px;margin-top:18px;padding-top:16px;border-top:1px solid var(--border)">Leo for Deathcare is the first edition built on the Leo platform; more editions follow as the suite grows. &nbsp;·&nbsp; <span class="stack" style="font-family:var(--font-mono);font-size:12px">Next.js · TypeScript · Claude API · Postgres</span></p>
+    </article>
+  </section>
+
+  <!-- WHERE THIS IS GOING -->
+  <section class="container section">
+    <div class="sec-head reveal"><div><div class="eyebrow">Where this is going</div><h2>Directions, not products yet</h2></div></div>
+    <p class="lead read reveal" style="margin-bottom:24px">The same document-understanding engine extends naturally into adjacent problem spaces. These are honest directions on the roadmap — not products with users, and I won't pretend otherwise.</p>
+    <div class="grid-3">
+      <div class="card reveal"><span class="tag">Direction</span><h3>Workflow automation</h3><p>Generalizing the "read a document, decide, route it" pattern into a configurable layer.</p></div>
+      <div class="card reveal"><span class="tag">Direction</span><h3>Business operations</h3><p>Board- and investor-ready reporting for founders without a finance or ops team.</p></div>
+      <div class="card reveal"><span class="tag">Direction</span><h3>AI productivity</h3><p>Packaging the reusable agent patterns and scaffolding behind every product in the suite.</p></div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="cta-band reveal">
+      <h2>Building something adjacent? Let's talk.</h2>
+      <p>Early-stage means there's room to shape what gets built. If you're a potential design partner, collaborator, or just curious, reach out.</p>
+      <div class="btn-row"><a class="btn btn-primary" href="/contact/">Get in touch</a><a class="btn btn-ghost" href="/build-log/">Follow the build</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="fb-name"><span class="mono">L</span>Linganore Technologies</div>
+        <p>A one-person software studio shipping focused, AI-native SaaS products across industries.</p>
+      </div>
+      <div class="footer-col"><h4>Products</h4><a href="/products/#leo-deathcare">Leo for Deathcare</a><a href="/products/#soc-delta">SOC Delta</a><a href="/products/#leo">Leo</a><a href="/products/">All products</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/studio/">Studio</a><a href="/build-log/">Build Log</a><a href="/capabilities/">Capabilities</a></div>
+      <div class="footer-col"><h4>Connect</h4><a href="mailto:roman.gouin@gmail.com">Email</a><a href="https://www.linkedin.com/in/romangouin" target="_blank" rel="noopener">LinkedIn</a><a href="/contact/">Contact</a></div>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span class="stamp">Built in the open · Linganore Technologies · <span data-year>2026</span></span>
+    <div class="socials">
+      <a href="mailto:roman.gouin@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+      <a href="https://www.linkedin.com/in/romangouin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+    </div>
+  </div>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>

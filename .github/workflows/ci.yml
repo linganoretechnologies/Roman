@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  leo-app:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: leo-app
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: leo-app/package-lock.json
+
+      - run: npm ci
+
+      - name: Secret scan
+        run: |
+          if command -v gitleaks >/dev/null 2>&1; then
+            gitleaks detect --source .. --no-git -v
+          else
+            echo "gitleaks not installed; skipping secret scan in CI"
+            ! rg -n "sk_live_|pk_live_|whsec_[a-zA-Z0-9]{20,}" .. --glob '!node_modules/**' --glob '!.next/**' || (echo "Possible secret detected" && exit 1)
+          fi
+
+      - run: npm run lint
+
+      - run: npm run typecheck
+
+      - run: npm test
+
+      - run: npm run build
+        env:
+          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_placeholder
+          CLERK_SECRET_KEY: sk_test_placeholder
+          DATABASE_URL: postgresql://placeholder:placeholder@localhost/placeholder
+
+  soc-delta:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: soc-delta
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: soc-delta/package-lock.json
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      - run: npm run typecheck
+
+      - run: npm test
+
+      - run: npm run build
+        env:
+          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_placeholder
+          CLERK_SECRET_KEY: sk_test_placeholder
+          DATABASE_URL: postgresql://placeholder:placeholder@localhost/placeholder

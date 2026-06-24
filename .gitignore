@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.env
+.env.local
+.env*.local
+design-partners/*
+!design-partners/.gitkeep
+.DS_Store
+*.log
